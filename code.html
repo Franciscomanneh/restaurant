@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fatima's-Resto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#95d4b3",
+                        "secondary-container": "#beedd9",
+                        "primary-container": "#ff6b00",
+                        "outline-variant": "#e2bfb0",
+                        "on-primary-container": "#572000",
+                        "on-tertiary-container": "#003925",
+                        "surface-bright": "#faf9f8",
+                        "secondary-fixed": "#beedd9",
+                        "surface-container": "#eeeeed",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#351000",
+                        "surface-container-high": "#e9e8e7",
+                        "surface": "#faf9f8",
+                        "on-surface": "#1a1c1c",
+                        "surface-tint": "#a04100",
+                        "on-primary-fixed-variant": "#7a3000",
+                        "tertiary-container": "#68a586",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffdbcc",
+                        "inverse-surface": "#2f3130",
+                        "surface-dim": "#dadad9",
+                        "tertiary-fixed": "#b1f0ce",
+                        "primary": "#a04100",
+                        "surface-container-highest": "#e3e2e1",
+                        "surface-variant": "#e3e2e1",
+                        "primary-fixed-dim": "#ffb693",
+                        "outline": "#8e7164",
+                        "on-tertiary-fixed": "#002114",
+                        "on-secondary-fixed-variant": "#234e40",
+                        "on-background": "#1a1c1c",
+                        "surface-container-low": "#f4f3f2",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f1f0f0",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "background": "#faf9f8",
+                        "secondary-fixed-dim": "#a3d0be",
+                        "on-tertiary-fixed-variant": "#0e5138",
+                        "on-error-container": "#93000a",
+                        "secondary": "#3c6658",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#5a4136",
+                        "on-secondary-container": "#426d5d",
+                        "inverse-primary": "#ffb693",
+                        "on-secondary-fixed": "#002117",
+                        "tertiary": "#2c694e",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf9f8]/80 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-[#ff6b00] italic font-headline">Fatima's Resto</div>
+<!-- Web Navigation -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold text-lg tracking-tight text-[#ff6b00] border-b-2 border-[#ff6b00] transition-colors duration-300" href="#">Home</a>
+<a class="font-headline font-bold text-lg tracking-tight text-[#3c6658] hover:text-[#ff6b00] transition-colors duration-300" href="#">Menu</a>
+<a class="font-headline font-bold text-lg tracking-tight text-[#3c6658] hover:text-[#ff6b00] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:text-[#ff6b00] transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-[#ff6b00] transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10">
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold tracking-tight text-on-surface leading-[1.1] mb-8">
+                        The art of <span class="text-primary italic">slow-cooked</span> West African flavors.
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        A modern Gambian bistro bringing curated heritage recipes to your digital table. Every dish is a dialogue between spice and freshness.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-headline font-bold text-lg shadow-lg shadow-orange-500/20 active:scale-95 transition-all">
+                            View Menu
+                        </button>
+<button class="bg-tertiary text-on-tertiary px-10 py-4 rounded-full font-headline font-bold text-lg flex items-center gap-2 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                            Order via WhatsApp
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Artisanal Gambian cuisine" class="w-full h-full object-cover" data-alt="Close-up of a beautifully plated Benachin dish with vibrant orange rice, fresh herbs, and seared sea bass in a minimalist ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEeY1-RyiyohOHar3AsxlGxTP5BXWs5XUmkShuySSTA7-W6en-sbZKzjx16dXDX4JPXQK7VlTWkU362MnnnZhpDcwgloOovw6aFgKG7UQEDiCpZ4L_a82S-vDZDPurblGT05AT9FK-Lv1oitGHw6ZcaqtdlZ2gBISqe2yn6R43JrNA9znjXeOARoLeQKC0r02xtiuPSxpsQ2NLmd6LdaQDIJ37La7v8NAd-UAlPCgjBZv7rUuqGg95_eRoTsLS-t0nuo2A9sFx9d4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+</div>
+<!-- Overlapping Decorative Element -->
+<div class="absolute -bottom-10 -left-10 hidden lg:block w-64 h-64 bg-secondary-container rounded-lg -z-10 opacity-50 blur-2xl"></div>
+</div>
+</div>
+</section>
+<!-- Quick Nav Chips -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-3 rounded-full font-headline font-bold whitespace-nowrap active:scale-95 transition-all">Daily Specials</button>
+<button class="bg-surface-container-low text-on-surface-variant px-8 py-3 rounded-full font-headline font-bold whitespace-nowrap hover:bg-surface-container-high transition-all">Signature Benachin</button>
+<button class="bg-surface-container-low text-on-surface-variant px-8 py-3 rounded-full font-headline font-bold whitespace-nowrap hover:bg-surface-container-high transition-all">Grilled Catch</button>
+<button class="bg-surface-container-low text-on-surface-variant px-8 py-3 rounded-full font-headline font-bold whitespace-nowrap hover:bg-surface-container-high transition-all">Vegan Garden</button>
+<button class="bg-surface-container-low text-on-surface-variant px-8 py-3 rounded-full font-headline font-bold whitespace-nowrap hover:bg-surface-container-high transition-all">Artisanal Juices</button>
+</div>
+</section>
+<!-- Value Props - Bento Grid Style -->
+<section class="bg-surface-container-low py-24 mb-32">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-lg shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="local_shipping">local_shipping</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Swift Delivery</h3>
+<p class="text-on-surface-variant">Carefully packaged and delivered across the city within 45 minutes of preparation.</p>
+</div>
+<div class="bg-tertiary text-on-tertiary p-10 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="eco">eco</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Fresh Sourcing</h3>
+<p class="opacity-90">We work directly with local farmers to ensure every ingredient meets our high bistro standards.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-lg shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="restaurant">restaurant</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Chef Curated</h3>
+<p class="text-on-surface-variant">Each menu item is a limited-run creation, rotating weekly to celebrate seasonal tastes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Menu - Asymmetric Grid -->
+<section class="max-w-7xl mx-auto px-6 mb-32">
+<div class="flex justify-between items-end mb-16">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight">Current Selection</h2>
+<a class="text-primary font-bold hover:underline" href="#">Explore Full Menu →</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Large Item -->
+<div class="md:col-span-8 group">
+<div class="aspect-[16/9] rounded-xl overflow-hidden mb-6 relative">
+<img alt="Signature Garden Bowl" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A lush, colorful vegetarian bowl with avocado, roasted sweet potato, quinoa, and fresh greens, shot from above with natural lighting." src="./images/benchin.jpg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Seasonal</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="text-2xl font-headline font-bold mb-2">Benachin</h4>
+<p class="text-on-surface-variant mb-4">Double-smoked rice, seasonal root vegetables, and fire-grilled chicken thigh.</p>
+</div>
+<div class="text-2xl font-headline font-extrabold text-primary">D750</div>
+</div>
+</div>
+<!-- Small Side Column -->
+<div class="md:col-span-4 flex flex-col gap-10">
+<div class="group">
+<div class="aspect-square rounded-lg overflow-hidden mb-4">
+<img alt="Gambian Seafood Platter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A platter of grilled Atlantic prawns and calamari with a lemon butter garlic glaze, served on a rustic stone plate." src="./images/domoda.jpg"/>
+</div>
+<h4 class="text-xl font-headline font-bold mb-1">Domoda</h4>
+<p class="text-primary font-bold">D600</p>
+</div>
+<div class="group">
+<div class="aspect-square rounded-lg overflow-hidden mb-4">
+<img alt="Artisanal Juice Blend" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Two glasses of vibrant purple Wonjo (hibiscus) juice garnished with fresh mint and lime wedges on a marble surface." src="./images/yasa.jpg"/>
+</div>
+<h4 class="text-xl font-headline font-bold mb-1">Yassa</h4>
+<p class="text-primary font-bold">D250</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works - Elegant Steps -->
+<section class="max-w-5xl mx-auto px-6 mb-32 text-center">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight mb-16">Kitchen to Doorstep</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
+<!-- Connection Line for Web -->
+<div class="hidden md:block absolute top-12 left-0 w-full h-[1px] bg-outline-variant/30 -z-10"></div>
+<div class="flex flex-col items-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center mb-8 border-4 border-surface">
+<span class="material-symbols-outlined text-3xl" data-icon="restaurant_menu">restaurant_menu</span>
+</div>
+<h5 class="text-xl font-headline font-bold mb-3">Select Your Feast</h5>
+<p class="text-on-surface-variant text-sm">Browse our limited-run weekly menu of Gambian favorites.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center mb-8 border-4 border-surface">
+<span class="material-symbols-outlined text-3xl" data-icon="edit_note">edit_note</span>
+</div>
+<h5 class="text-xl font-headline font-bold mb-3">Kitchen Prep</h5>
+<p class="text-on-surface-variant text-sm">Our chefs begin preparation the moment your order is confirmed.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center mb-8 border-4 border-surface">
+<span class="material-symbols-outlined text-3xl" data-icon="speed">speed</span>
+</div>
+<h5 class="text-xl font-headline font-bold mb-3">Priority Delivery</h5>
+<p class="text-on-surface-variant text-sm">Track your hot meal as it makes its way to your dining table.</p>
+</div>
+</div>
+</section>
+<!-- Contact/Map Section -->
+<section class="max-w-7xl mx-auto px-6 mb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-surface-container rounded-xl overflow-hidden">
+<div class="p-12 lg:p-20">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight mb-8">Visit Our Kitchen</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<p class="text-on-surface-variant">42 Atlantic Boulevard, <br/>Serrekunda, The Gambia</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<p class="text-on-surface-variant">Mon – Sat: 11:00 AM – 10:00 PM <br/>Sun: Closed</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<p class="text-on-surface-variant">+220 776 5432</p>
+</div>
+</div>
+<button class="mt-12 bg-surface-container-lowest text-on-surface px-8 py-3 rounded-full font-headline font-bold border border-outline-variant hover:bg-white transition-all">Get Directions</button>
+</div>
+<div class="h-[400px] md:h-full min-h-[400px]">
+<img alt="Map of Serrekunda location" class="w-full h-full object-cover" data-alt="Stylized minimalist map showing the Atlantic coast of Gambia with a refined pin on Serrekunda." data-location="Serrekunda, Gambia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB90HPZVjfMmjDZd9r3wea9A6ex-aAHUy2T6VpyWNgZSEV_titPM5GAiA8m3GgWPmcci5ccGQTPqdnMR8uryrVdnunAhapnVwBoB6x_UwpfzKXAruGuyVrP_eW4ODWV-8mEcuUtaeOhvYEBvmEHQchADeYvsMqb98RCLTfjejJSzL8A77qGjYJ8wS1Fa0qEqj_5gAMtqkiWdPEavwlzJ2MGVrajRHviHSj4OegcgZa4tpzjt_lv_4mF5zAsTDu259Erq3tL_bt2KVI"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-12 bg-[#eeeeed]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="font-plus-jakarta font-black text-[#ff6b00] text-2xl">The Curated Table</div>
+<div class="flex gap-8 text-[#3c6658] font-manrope text-sm font-medium">
+<a class="opacity-70 hover:opacity-100 hover:text-[#ff6b00] transition-all" href="#">Our Kitchen</a>
+<a class="opacity-70 hover:opacity-100 hover:text-[#ff6b00] transition-all" href="#">Sourcing</a>
+<a class="opacity-70 hover:opacity-100 hover:text-[#ff6b00] transition-all" href="#">Delivery Zones</a>
+<a class="opacity-70 hover:opacity-100 hover:text-[#ff6b00] transition-all" href="#">Contact</a>
+</div>
+<p class="font-manrope text-sm font-medium text-[#3c6658] opacity-70">
+                © 2024 The Curated Table • Gambian Digital Bistro
+            </p>
+</div>
+</footer>
+<!-- Mobile Navigation Shell -->
+<nav class="md:hidden fixed bottom-6 left-0 right-0 z-50 flex justify-around items-center px-4">
+<div class="flex justify-around items-center w-full max-w-md bg-white/70 backdrop-blur-2xl rounded-full px-2 py-2 border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
+<a class="bg-[#ff6b00] text-white rounded-full px-5 py-2 flex flex-col items-center gap-1 shadow-lg shadow-orange-500/30 active:scale-110 transition-all duration-500 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+<span class="font-manrope text-[11px] font-semibold uppercase tracking-widest">Bistro</span>
+</a>
+<a class="text-[#3c6658] flex flex-col items-center px-4 py-2 hover:bg-stone-100/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="lunch_dining">lunch_dining</span>
+<span class="font-manrope text-[11px] font-semibold uppercase tracking-widest">Menu</span>
+</a>
+<a class="text-[#3c6658] flex flex-col items-center px-4 py-2 hover:bg-stone-100/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-manrope text-[11px] font-semibold uppercase tracking-widest">WhatsApp</span>
+</a>
+<a class="text-[#3c6658] flex flex-col items-center px-4 py-2 hover:bg-stone-100/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-manrope text-[11px] font-semibold uppercase tracking-widest">Orders</span>
+</a>
+</div>
+</nav>
+<!-- Floating WhatsApp Hub (Signature Component) -->
+<div class="hidden md:flex fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+<div class="glass-nav bg-surface/70 border border-white/20 rounded-full px-8 py-4 flex items-center gap-6 shadow-[0_30px_60px_rgba(0,0,0,0.12)]">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+<span class="text-sm font-bold text-on-surface">Kitchen is Open</span>
+</div>
+<div class="w-[1px] h-6 bg-outline-variant/30"></div>
+<a class="flex items-center gap-3 bg-tertiary text-on-tertiary px-6 py-2 rounded-full hover:scale-105 transition-transform active:scale-95" href="https://wa.me/2207765432">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-headline font-bold">Quick WhatsApp Order</span>
+</a>
+</div>
+</div>
+</body></html>
